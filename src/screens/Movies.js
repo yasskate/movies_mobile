@@ -49,7 +49,7 @@ export class Movies extends PureComponent {
     );
   };
 
-  getMovieDetail = movie => {
+  navigateToMovieDetail = movie => {
     this.props.setSelectedMovie(movie);
     this.props.navigation.navigate('movieDetail');
   };
@@ -90,7 +90,9 @@ export class Movies extends PureComponent {
 
   _getMovieItem = item => {
     return (
-      <TouchableWithoutFeedback onPress={() => this.getMovieDetail(item)}>
+      <TouchableWithoutFeedback
+        onPress={() => this.navigateToMovieDetail(item)}
+      >
         <View style={styles.itemContainer}>
           {this._getTextMovieItem(item)}
           {this._getImageMovieItem(item)}
