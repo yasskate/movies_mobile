@@ -1,0 +1,5 @@
+export const GET_MOVIES_LIST = 'GET_MOVIES_LIST';
+export const GET_A_MOVIE = 'GET_A_MOVIE';
+
+export const SET_MOVIES_LIST = 'SET_MOVIES_LIST';
+export const SET_SELECTED_MOVIE = 'SET_SELECTED_MOVIE';
