@@ -6,7 +6,7 @@ class AddMovieModal extends PureComponent {
     return (
       <View style={styles.container}>
         <Text>Add Movie Modal</Text>
-        <Text>Form for addig new movies</Text>
+        <Text>Form for addig new movieste</Text>
       </View>
     );
   };
