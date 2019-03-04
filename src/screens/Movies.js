@@ -6,7 +6,8 @@ import {
   FlatList,
   Image,
   StyleSheet,
-  TouchableWithoutFeedback
+  TouchableWithoutFeedback,
+  Alert
 } from 'react-native';
 import { getMoviesList, setSelectedMovie } from '../state/actions/index';
 import { renderLoader } from '../utils/loader/Loader';
@@ -17,7 +18,18 @@ export class Movies extends PureComponent {
     return {
       headerLeft: <View />,
       headerRight: (
-        <TouchableWithoutFeedback>
+        <TouchableWithoutFeedback
+          onPress={() =>
+            Alert.alert(
+              'Attention!',
+              'This alert box should be a modal form for adding new movies',
+              [
+                { text: 'ok, I will add it', onPress: () => {} },
+                { text: "nope, I won't add it", onPress: () => {} }
+              ]
+            )
+          }
+        >
           <View style={{ paddingHorizontal: 12, paddingVertical: 12 }}>
             <Image
               source={images.plus_icon}
