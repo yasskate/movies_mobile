@@ -10,7 +10,7 @@
     "axios": "^0.18.0",
     "prop-types": "^15.6.0",
     "react": "16.6.3",
-    "react-native": "^0.58.6",
+    "react-native": "^0.70.2",
     "react-native-modal": "^9.0.0",
     "react-navigation": "^2.18.3",
     "react-redux": "^5.0.7",
